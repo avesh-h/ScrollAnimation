@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+
+<!--Bootstrap Files-->
+
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<script src="js/bootstrap.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid one">
+<h1 class="reveal">
+    Reveal Elements Animation
+</h1>
+
+
+
+
+<div class="nav">
+
+  <button id="ham" >
+
+<div></div>
+<div></div>
+<div></div>
+
+</button>
+
+
+
+<nav id="nav" class="target">
+  <ul id="one">
+      <li>Home</li>
+      <li>Services</li>
+    
+          
+      <li>More</li>
+      <button id="cross">
+          X
+      </button>
+  </ul>
+
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid two ">
+    <div class="row reveal" id="heading">
+    <h2><center><br><br> Your Text Is Here</center></h2>
+     </div><br><br>
+
+    <div class="row second reveal">
+        <div class="card p-2 m-2" style="width: 18rem;">
+            <img src="images/game.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div><div class="card p-2 m-2 " style="width: 18rem;">
+            <img src="images/cd.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div><div class="card p-2 m-2" style="width: 18rem;">
+            <img src="images/boat.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div><div class="card p-2 m-2" style="width: 18rem;">
+            <img src="images/nature.jpg" class="card-img-top" alt="..." width="200" height="180">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    </div><br><br><br><br>
+
+</div>
+
+
+
+
+
+<div class="container-fluid three ">
+
+  
+    
+    <div class="heading-three reveal"> <b> Your title </b></div> 
+
+  <br><br><img src="images/nature2.jpg" class="img-fluid reveal " alt="..." id="main-img">
+
+
+
+  <div class="card text-white mb-3 reveal" style="max-width: 18rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">Primary card title</h5><hr>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas sapiente laboriosam magni eius iusto maxime rem odit officiis, autem tempora quasi nisi numquam architecto..</p>
+    </div>
+  </div>
+
+  <div class="social ">
+      <a href=""><img src="images/fb.png" alt="" width="25" height="25"></a>
+      <a href=""><img src="images/insta.png" alt=""width="25" height="25" class="same"></a>
+      <a href=""><img src="images/twit.png" alt=""width="30" height="35" class="same"></a>
+      <a href=""><img src="images/yt.png" alt=""width="28" height="21"></a>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="container-fluid ">
+
+<div class="row fourth">
+<img src="images/nature3.jpg" alt="" class="img-fluid reveal">
+
+<div class="para reveal">
+<h2>
+Description
+</h2><hr>
+
+<p>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores quasi quis impedit quas natus omnis sit ex. Dolor soluta incidunt voluptatum aut ipsam necessitatibus dignissimos praesentium commodi quis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi reiciendis ratione tenetur. Vitae aperiam, voluptates nobis distinctio 
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="container-fluid fifth ">
+
+    
+
+    <div class="card reveal" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5><hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+        </div>
+      </div>
+      
+      
+      <div class="card reveal" style="width: 18rem;">
+           <div class="card-body">
+          <h5 class="card-title">Card title</h5><hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+
+      <div class="card reveal" style="width: 18rem;">
+         <div class="card-body">
+          <h5 class="card-title">Card title</h5><hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         
+        </div>
+      </div>
+
+      <div class="card reveal" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5><hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+                     /*Animation*/
+
+window.addEventListener("scroll",reveal)
+
+function reveal(){
+
+  var reveals = document.querySelectorAll('.reveal')
+
+  for(var i=0; i < reveals.length;i++){
+
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top
+    var revealpoint = 150
+
+    if(revealtop < windowheight - revealpoint){
+
+      reveals[i].classList.add('active')
+
+      
+    }
+
+    else{
+      reveals[i].classList.remove('active')
+    }
+
+
+  }
+
+}
+
+
+/*window.addEventListener("scroll",reveal)
+
+
+function reveal(){
+
+  var reveal = document.querySelectorAll(".reveal")
+
+reveal.classList.add('active')
+
+
+}*/
+
+
+
+               /*Open And Close Side Menu*/
+
+
+let target = document.querySelector('.target')
+
+let ham = document.querySelector('#ham')
+
+let cross = document.querySelector("#cross")
+
+
+                   /*For Open*/
+
+ham.addEventListener('click',function(){
+
+target.classList.add('click')
+
+ham.style.visibility = "hidden";
+
+})
+
+                /*For Close*/
+
+
+cross.addEventListener("click",function(){
+  target.classList.remove('click')
+
+  ham.style.visibility = "visible";
+})
+
+
+
+</script>
+
+
+</body>
+</html>

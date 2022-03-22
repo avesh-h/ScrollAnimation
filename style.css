@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body{
+   
+    height: 100vh;
+   /* border: 1px solid red;*/
+   overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+                                 
+
+
+.nav div{
+
+    width: 45px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    
+    
+
+}
+
+#ham{
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    border: none;
+    background-color: transparent;
+
+}
+
+#nav{
+   
+    height: 100vh;
+   
+    width: 20%;
+    background-color: rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+
+     
+
+}
+
+.target{
+ /*border: 1px solid red;*/
+ position: fixed;
+ left: -100%;
+ top: 0;
+
+}
+
+.click{
+
+left: 0%;
+}
+
+
+
+
+
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+    
+    
+}
+
+.nav li{
+    list-style: none;
+    margin-top: 65%;
+    padding: 3%;
+   
+    
+
+}
+
+#cross{
+        
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 38px;
+    position: fixed;
+    top: 0px;
+     right: 2%;
+     padding: 2%;
+    
+}
+
+li:hover{
+    
+    color: rgb(143, 143, 153);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   /*First*/
+
+
+body .one{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   /* border: 1px solid green;*/
+    background-color: rgb(21, 16, 51);
+    background-image: -webkit-linear-gradient(top,black 0%,rgb(21, 16, 51) 70%);
+    color: white;
+    
+}
+
+
+
+
+
+
+                         /*Second*/
+
+
+.two{
+   /* border: 1px solid red;*/
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+#heading{
+   
+}
+.two .card{
+    background-color: rgb(36, 36, 36);
+   /* border: 2px dotted white;*/
+   border-radius: 10px;
+
+}
+.card img{
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+                                 /*Three*/
+.three{
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    
+    
+
+}  
+
+
+#main-img{
+
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    z-index: 1;
+    
+    
+}
+.three .card{
+
+    width: auto;
+    z-index: 2;
+    position: relative;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    width: auto;
+   
+    
+}
+
+
+
+.heading-three{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 38%;
+    left: 35%;
+    font-size: 50px;
+   /* border: 1px solid red;*/
+   
+    width: auto;
+    
+ 
+    
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 18%;
+    justify-content: space-between;
+   /* border: 1px solid yellow;*/
+    height: 500px;
+
+}
+.social .same{
+    position: relative;
+    right: 100px;
+}
+
+
+
+
+                      /*Four*/
+
+   .fourth{
+
+background: rgb(36, 36, 36) ;
+/*border: 1px solid red;*/
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row-reverse;
+width: auto;
+height: auto;
+
+
+   }
+   
+.fourth img{
+
+
+width: auto;
+height: 55vh;
+position: relative;
+left: 5%;
+margin: 5%;
+border-radius: 30px;
+
+
+
+   }
+
+
+
+.fourth .para{
+
+  width: 30%;  
+  position: relative;
+  right: 1%;
+ 
+  
+ 
+}
+
+
+                                              /*Fifth*/
+
+.fifth{
+    display: flex;
+    flex-direction: row;
+    background: black;
+   /* border: 1px solid red;*/
+    justify-content: space-around;
+    align-items: center;
+   
+    height: 60vh;
+    
+    
+    
+}
+
+.fifth .card{
+   /* position: relative;
+    top: 25%;*/
+    background-color:rgb(36, 36, 36) ;
+    color: white;
+   margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+}
+
+
+
+                                                         /*Animation*/
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+ .active{
+
+    opacity: 1;
+
+    transform: translateY(0px);
+    
+    
+}
+
+
+
+
+
+
+
+
+
